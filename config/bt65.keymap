@@ -67,8 +67,8 @@
             bindings = <
 &trans      &kp F1  &kp F2    &kp F3        &kp F4     &kp F5         &kp F6  &kp F7  &kp F8      &kp F9             &kp F10    &kp F11   &kp F12          &trans           &lights_on
 &trans      &trans  &kp HOME  &kp UP_ARROW  &kp END    &kp PAGE_UP    &trans  &trans  &kp INS     &trans             &kp PSCRN  &kp SLCK  &kp PAUSE_BREAK                   &lights_off
-&caps_word  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &trans  &trans  &trans      &to 4              &trans     &trans    &sys_reset       &bootloader      &trans
-&trans      &trans  &trans    &trans        &trans     &trans         &to 3   &trans  &tog 2      &trans             &trans     &trans    &trans           &kp C_VOLUME_UP  &trans
+&caps_word  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &trans  &trans  &trans      &tog 4             &trans     &trans    &sys_reset       &bootloader      &trans
+&trans      &trans  &trans    &trans        &trans     &trans         &tog 3  &trans  &tog 2      &trans             &trans     &trans    &trans           &kp C_VOLUME_UP  &trans
             &trans  &trans    &trans        &trans     &trans         &trans  &trans  &kp C_MUTE  &kp C_VOLUME_DOWN  &trans
             >;
         };
@@ -85,11 +85,11 @@
 
         bluetooth {
             bindings = <
-&to 0  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &none   &none  &none       &none         &none       &none  &none  &bt BT_CLR    &bt BT_CLR_ALL
-&none  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &none   &none  &none       &none         &none       &none  &none                &none
-&none  &none          &none          &none          &none          &none          &none   &none  &none       &none         &none       &none  &none  &none         &none
-&none  &none          &none          &none          &none          &none          &trans  &none  &none       &none         &none       &none  &none  &out OUT_BLE  &none
-       &none          &none          &none          &none          &none          &none   &none  &bt BT_PRV  &out OUT_USB  &bt BT_NXT
+&tog 3  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &none   &none  &none       &none         &none       &none  &none  &bt BT_CLR    &bt BT_CLR_ALL
+&none   &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &none   &none  &none       &none         &none       &none  &none                &none
+&none   &none          &none          &none          &none          &none          &none   &none  &none       &none         &none       &none  &none  &none         &none
+&none   &none          &none          &none          &none          &none          &trans  &none  &none       &none         &none       &none  &none  &out OUT_BLE  &none
+        &none          &none          &none          &none          &none          &none   &none  &bt BT_PRV  &out OUT_USB  &bt BT_NXT
             >;
         };
 
