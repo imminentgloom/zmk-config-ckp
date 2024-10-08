@@ -23,8 +23,7 @@
 
         toggle_lock {
             bindings = <&tog 4>;
-            key-positions = <0 59 14 68>;
-            layers = <4>;
+            key-positions = <0 59 68 14>;
         };
     };
 
