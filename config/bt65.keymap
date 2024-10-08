@@ -11,7 +11,7 @@
 
         toggle_macos {
             bindings = <&tog 2>;
-            key-positions = <58 63 61>;
+            key-positions = <58 59>;
             layers = <2>;
         };
 
@@ -23,7 +23,7 @@
 
         toggle_lock {
             bindings = <&tog 4>;
-            key-positions = <0 59 68 14>;
+            key-positions = <38 58>;
         };
     };
 
