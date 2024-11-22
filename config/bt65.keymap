@@ -41,7 +41,6 @@
     behaviors {
         Space_FN: Space_FN {
             compatible = "zmk,behavior-hold-tap";
-            label = "SPACE_FN";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
