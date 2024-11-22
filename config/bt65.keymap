@@ -9,11 +9,11 @@
     combos { compatible = "zmk,combos"; };
 
     macros {
-        lights_off: toggle_lights {
+        lights_off: lights_off {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bl BL_OFF &rgb_ug RGB_OFF &kp>;
-            label = "TOGGLE_LIGHTS";
+            bindings = <&bl BL_OFF &rgb_ug RGB_OFF>;
+            label = "lights_off";
         };
 
         lights_on: lights_on {
