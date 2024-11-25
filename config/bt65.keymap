@@ -82,11 +82,11 @@
 
         raise {
             bindings = <
-&kp NON_US_BSLH  &kp F1  &kp F2    &kp F3        &kp F4     &kp F5         &kp F6            &kp F7      &kp F8      &kp F9                  &kp F10                  &kp F11  &kp F12    &trans           &to 3
-&trans           &trans  &kp HOME  &kp UP_ARROW  &kp END    &kp PAGE_UP    &trans            &kp LA(N8)  &kp LA(N9)  &kp LS(LA(LEFT_BRACE))  &kp LS(LA(RIGHT_BRACE))  &trans   &trans                      &lights_on
-&trans           &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &trans            &kp LS(N8)  &kp LS(N9)  &kp LS(SLASH)           &kp LS(LA(SLASH))        &trans   &kp TILDE  &trans           &lights_off
-&trans           &trans  &trans    &trans        &trans     &trans         &cfg_layer_enter  &trans      &trans      &trans                  &trans                   &trans   &trans     &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC
-                 &trans  &trans    &trans        &trans     &trans         &trans            &trans      &kp C_MUTE  &kp C_VOLUME_DOWN       &kp C_BRIGHTNESS_DEC
+&kp NON_US_BSLH  &kp F1  &kp F2    &kp F3        &kp F4     &kp F5         &kp F6            &kp F7      &kp F8      &kp F9             &kp F10               &kp F11  &kp F12    &trans           &to 3
+&trans           &trans  &kp HOME  &kp UP_ARROW  &kp END    &kp PAGE_UP    &trans            &kp LA(N8)  &kp LA(N9)  &kp LS(LA(N7))     &kp LS(LA(N0))        &trans   &trans                      &lights_on
+&trans           &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &trans            &kp LS(N8)  &kp LS(N9)  &kp LS(N7)         &kp LS(LA(N7))        &trans   &kp TILDE  &trans           &lights_off
+&trans           &trans  &trans    &trans        &trans     &trans         &cfg_layer_enter  &trans      &trans      &trans             &trans                &trans   &trans     &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC
+                 &trans  &trans    &trans        &trans     &trans         &trans            &trans      &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC
             >;
         };
 
