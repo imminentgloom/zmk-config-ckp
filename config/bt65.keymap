@@ -62,21 +62,21 @@
             // ------------------------------------------------------------------------------------------------------------
 
             bindings = <
-&kp ESCAPE      &kp N1            &kp N2        &kp N3        &kp N4       &kp N5         &kp N6             &kp N7              &kp N8    &kp N9     &kp N0     &kp MINUS  &kp EQUAL        &kp BACKSPACE  &kp DEL
-&kp TAB         &kp Q             &kp W         &kp E         &kp R        &kp T          &kp Y              &kp U               &kp I     &kp O      &kp P      &kp LBKT   &kp RBKT                        &kp PAGE_UP
-&mt RCTRL CLCK  &kp A             &kp S         &kp D         &kp F        &kp G          &kp H              &kp J               &kp K     &kp L      &kp SEMI   &kp SQT    &kp NON_US_HASH  &kp RET        &kp PAGE_DOWN
-&kp LSHFT       &kp GRAVE         &kp Z         &kp X         &kp C        &kp V          &kp B              &kp N               &kp M     &kp COMMA  &kp DOT    &kp FSLH   &kp RSHFT        &kp UP         &kp END
-                &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp K_CONTEXT_MENU  &kp LEFT  &kp DOWN   &kp RIGHT
+&kp ESCAPE      &kp N1             &kp N2        &kp N3     &kp N4     &kp N5     &kp N6    &kp N7    &kp N8    &kp N9     &kp N0     &kp MINUS  &kp EQUAL        &kp BACKSPACE  &kp DEL
+&kp TAB         &kp Q              &kp W         &kp E      &kp R      &kp T      &kp Y     &kp U     &kp I     &kp O      &kp P      &kp LBKT   &kp RBKT                        &kp PAGE_UP
+&mt RCTRL CLCK  &kp A              &kp S         &kp D      &kp F      &kp G      &kp H     &kp J     &kp K     &kp L      &kp SEMI   &kp SQT    &kp NON_US_HASH  &kp RET        &kp PAGE_DOWN
+&kp LSHFT       &kp GRAVE          &kp Z         &kp X      &kp C      &kp V      &kp B     &kp N     &kp M     &kp COMMA  &kp DOT    &kp FSLH   &kp RSHFT        &kp UP         &mo 1
+                &kp K_APPLICATION  &kp LEFT_ALT  &kp LCTRL  &kp SPACE  &kp RCTRL  &kp LALT  &kp RGUI  &kp LEFT  &kp DOWN   &kp RIGHT
             >;
         };
 
         raise {
             bindings = <
-&kp NON_US_BSLH  &kp F1  &kp F2    &kp F3        &kp F4     &kp F5         &kp F6            &kp F7      &kp F8      &kp F9             &kp F10               &kp F11  &kp F12    &trans           &to 3
-&trans           &trans  &kp HOME  &kp UP_ARROW  &kp END    &kp PAGE_UP    &trans            &kp LA(N8)  &kp LA(N9)  &kp LA(N7)         &kp LA(N0)            &trans   &trans                      &lights_on
-&trans           &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &trans            &kp LS(N8)  &kp LS(N9)  &kp LS(N7)         &kp LS(LA(N7))        &trans   &kp TILDE  &trans           &lights_off
-&trans           &trans  &trans    &trans        &trans     &trans         &cfg_layer_enter  &trans      &trans      &trans             &trans                &trans   &trans     &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC
-                 &trans  &trans    &trans        &trans     &trans         &trans            &trans      &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC
+&kp NON_US_BSLH  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6            &kp F7  &kp F8  &kp F9             &kp F10  &kp F11  &kp F12  &trans           &kp PRINTSCREEN
+&trans           &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans             &trans   &trans   &trans                    &kp HOME
+&trans           &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans             &trans   &trans   &trans   &kp C_MUTE       &kp END
+&trans           &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans             &trans   &trans   &trans   &kp C_VOLUME_UP  &trans
+                 &trans  &trans  &trans  &trans  &trans  &cfg_layer_enter  &trans  &trans  &kp C_VOLUME_DOWN  &trans
             >;
         };
 
@@ -87,26 +87,6 @@
 &none            &none          &none          &none          &none          &none          &none   &none  &none       &none         &none       &none  &sys_reset  &bootloader   &none
 &none            &none          &none          &none          &none          &none          &trans  &none  &none       &none         &none       &none  &none       &out OUT_BLE  &none
                  &none          &none          &none          &none          &none          &none   &none  &bt BT_PRV  &out OUT_USB  &bt BT_NXT
-            >;
-        };
-
-        LOCK {
-            bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none         &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-       &none  &none  &none  &mo 4  &none  &none  &none  &none  &none  &none
-            >;
-        };
-
-        UNLOCK {
-            bindings = <
-&to 0  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none         &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-       &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
             >;
         };
     };
